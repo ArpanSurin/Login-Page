@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+div>a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: top-right;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    font-weight: bolder;
+    margin: top right;
+    padding: 0px 19px;
+    font-size: 18px;
+}
+
+ul li a { /*Home, contact us */
+    color: black;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: black
+}
+
+nav {
+    background-color: white;
+}
+
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .hero */
+h1 {
+    /* Network*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 160px;
+    padding: 0;
+}
+
+.hero .dive .in{/* Dive In */
+    color:white;
+    border: 5px solid white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    display: flex;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dive .in:hover {
+    background : white;
+    color: #162938;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* FORM BOX */
+
+.wrapper{ /*login/register box*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 530px;
+    left: 280px;
+    width: 700px;
+    height: 540px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px black;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.pop{
+    transform: scale(1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper.active .form-login{
+    transition: .2s ease;
+    transform: translateX(-600px);
+}
+
+.wrapper.active .form-reg{
+    transition: .2s ease;
+    transform: translateX(0px);
+}
+
+.wrapper .icon-close{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 47px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    transition: .3s;
+}
+
+.wrapper .icon-close:hover{
+    background: white;
+    color: black;
+}
+
+.wrapper .form-login{ 
+    color: white;
+    transition: .2s ease;
+    transform: translateX(0px);
+}
+
+.wrapper .form{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-reg{ /*Register form box*/
+    position: absolute;
+    transition: .2s ease;
+    transform: translateX(600px);
+}
+
+.wrapper .form-login h2{ /*Login*/
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .form-reg h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.login-register .account{ /*Don't have an account*/
+    display: flex;
+    font-weight:500;
+    font-size: medium;
+    justify-content: space-between;
+}
+
+.account .register-link{ /*Register Link*/
+    color: white;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.account .register-link:hover{
+    color: rgb(0, 160, 160);
+    text-decoration: underline;
+}
+
+.account .login-link{ /* Login form */
+    color: white;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.account .login-link:hover{
+    color: rgb(0, 160, 160);
+    text-decoration: underline;
+}
+
+.rem-for{
+    font-size: 18px;
+}
+
+.rem-for a{ /*Remember me, forgot password*/
+    color: white;
+    font-size: medium;
+    justify-content: space-between;
+}
+
+.input-box{ 
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: bolder;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+    font-size: 1.2em;
+}
+
+.btn{ /*login button*/
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    transition: .3s;
+    font-weight:bolder;
+    margin: 5px;
+    border: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+}
+
+.wrapper .form-reg{
+    color: white;
+}
+
+.form-reg .h2{
+    display: flex;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 1080px){
+    nav{
+        width: 100%;
+    }
+    h1{
+        font-size: 100px;
+    }
+    .hero{
+        overflow: hidden;
+    }
+    .dive .in{
+        position: relative;
+    }
+    .wrapper{
+        width: 400px;
+    }
+    .wrapper.pop{
+        transform: scale(2);
+        position: absolute;
+        left: 9cm;
+        bottom: 10cm;
+    }
+
+}

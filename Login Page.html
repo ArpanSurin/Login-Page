@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, intitial-scale = 1.0">
+    <title> Surtech </title>
+    <link rel="stylesheet" href="css/Login page.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Surin Industries</a>
+            </div>
+            <ul>
+                <li><a href="#"> Contact Info </a> </li>
+                <li><a href="#"> Support Us </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <video autoplay loop muted plays-inlne class="back-video">
+            <source src="network.mp4" type="video/mp4">
+        </video>
+        <div class="hero">
+            <h1> SurTech </h1>
+            <p class="dive"> <a class="in">Dive In</a> </p>
+        </div>
+
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon> <!-- Close Icon -->
+            </span>
+            <div class="form-login"> <!-- Login form -->
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock"></ion-icon>
+                        </span>
+                        <input type="Password" id="pass" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="rem-for">
+                        <label><input type="checkbox"> Remember me |
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <a href="C:\Users\arpan\Documents\Programs\index.html">
+                        <button type="submit" class="btn">Login</button>
+                    </a>
+                    <div class="login-register">
+                        <p class="account"> Don't have an account?  
+                            <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-reg"> <!--  Registration form -->
+                <h3>Registration</h3>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock"></ion-icon>
+                        </span>
+                        <input type="Password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="rem-for">
+                        <label><input type="checkbox"> I agree to the terms & conditions
+                        </label>
+                    </div>
+                    <a >
+                        <button type="submit" class="btn" href="index.html">Register</button>
+                    </a>
+                    <div class="login-register">
+                        <p class="account"> Already have an account?  
+                            <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
