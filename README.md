@@ -8,4 +8,5 @@ A simple login page built using Html, Css & JavaScript.
 ## Languages Used
 
 * Html
+* CSS
 * Javascript
